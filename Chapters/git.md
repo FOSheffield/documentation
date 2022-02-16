@@ -62,3 +62,16 @@ $ ssh -T git@bitbuck.org
 
 > Hi username! You've successfully authenticated, but GitHub does not
 > provide shell access.
+
+
+## Git Branching -Remote Branches
+
+```cmd
+git remote show
+```
+
+```cmd
+git ls-remote
+```
+
+the [link](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) to explain git branching and remote branching clearly
