@@ -7,18 +7,21 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 This creates a new SSH key, using the provided email as a label.
-
+```cmd
 > Generating public/private algorithm key pair.
-
+```
 When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
+```cmd
 > Enter a file in which to save the key (/c/Users/you/.ssh/id_algorithm):[Press enter]
+```
 
 At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases."
 
+```cmd
 > Enter passphrase (empty for no passphrase): [Type a passphrase]
 > Enter same passphrase again: [Type passphrase again]
-
+```
 
 ## Adding your SSH key to the ssh-agent
 
@@ -60,9 +63,10 @@ $ ssh -T git@bitbuck.org
 ```
 2. Verify that the fingerprint in the message you see matches GitHub's RSA public key fingerprint. If it does, then type yes:
 
+```cmd
 > Hi username! You've successfully authenticated, but GitHub does not
 > provide shell access.
-
+```
 
 ## Git Branching -Remote Branches
 
