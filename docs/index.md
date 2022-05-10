@@ -1,21 +1,26 @@
-# Welcome to Highlander Computing solution
+# :smile: Welcome  
 
 
 ## Documentation Map
 
-### [ Git ](Git/git.md)
 
-### [Microsft Team](MicrosoftTeam/microsftTeams.md)
+### []
 
-### [Deployment]
+### [ Git ](git/git.md)
 
-#### Email Capture
+### [Microsft Team](microsoftTeam/microsftTeams.md)
 
 
-#### IQBlade API 
+### Deployment
+
+
+#### [Email Capture](https://highlander.sharepoint.com/:w:/s/SystemsDevelopment/EbytszPke65Do6XMEPThXzABRtooxNNvVVkhhixQCO4QJA?e=uuWys4)
+
+
+#### [IQBlade API](https://highlander.sharepoint.com/:w:/s/SystemsDevelopment/EbytszPke65Do6XMEPThXzABRtooxNNvVVkhhixQCO4QJA?e=uuWys4)
 automatically generating customer Record Based on Company House Number
 
-## Support or Contact
+## :star: Support or Contact  
 
-Having troble with Pages? Check out our [Q&A](Q&A/index.md) or [contact support](https://highlanderuk.com/contact/) and we'll help you sort it out.
+Having troble with Pages? Check out our [Q&A](q&a/index.md) or [contact support](https://highlanderuk.com/contact/) and we'll help you sort it out.
 
