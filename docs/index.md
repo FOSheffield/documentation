@@ -4,7 +4,7 @@
 ## Documentation Map
 
 
-### [Customer](customer/index.md)
+### [Customer](customers/index.md)
 
 ### [ Git ](git/git.md)
 
