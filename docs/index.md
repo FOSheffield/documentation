@@ -23,6 +23,7 @@
 ## Boxxe
 
 ### **setPrefercustomscript_kw_setpreferredbinue**
+
 Type | name | Id | script 
 --- | --- | --- | ---
 User Event | `setPreferredBinUE` | customscript_kw_setpreferredbinue |   setPreferredBinUE.js
@@ -33,6 +34,7 @@ User Event | `setPreferredBinUE` | customscript_kw_setpreferredbinue |   setPref
 
 
 ### **customscript_kw_autosalesprices**
+
 Type | name | Id | script 
 --- | --- | --- | ---
 User Event | `Highlander AutoSalesPrices` | customscript_kw_autosalesprices | UserEventScript_Highlander_autoSalesPrice.js
@@ -40,6 +42,7 @@ User Event | `Highlander AutoSalesPrices` | customscript_kw_autosalesprices | Us
 [find it from our private repo](https://github.com/HighlanderComputingSolution/monthlyBilling/blob/master/docs/UserEventScript_Highlander_autoSalesPrice.md)
 
 ### **customscript_kw_delivery_charge_ue**
+
 Type | name | Id | script 
 --- | --- | --- | ---
 User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
