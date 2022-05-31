@@ -3,14 +3,15 @@
 
 **Documentation Map**
 - [Customer <a name = "customers"></a>](#customer-)
-  - [DIS <a name ="dis"></a>](#dis-)
+  - [Boxxe](#boxxe)
+    - [**setPrefercustomscript_kw_setpreferredbinue**](#setprefercustomscript_kw_setpreferredbinue)
   - [Highlander <a name = "highlander"></a>](#highlander-)
-    - [**setPreferredBinUE**](#setpreferredbinue)
-    - [**UserEventScript_Highlander_autoSalesPrice**](#usereventscript_highlander_autosalesprice)
+    - [**customscript_kw_autosalesprices**](#customscript_kw_autosalesprices)
     - [**customscript_kw_delivery_charge_ue**](#customscript_kw_delivery_charge_ue)
     - [**customscript_kw_hide_button_client**](#customscript_kw_hide_button_client)
   - [Artesian Spas <a name="artesianspa"></a>](#artesian-spas-)
     - [**customscript_kw_formulas_1**](#customscript_kw_formulas_1)
+  - [DIS <a name ="dis"></a>](#dis-)
 - [Deployment <a name="deployment"></a>](#deployment-)
 - [Git <a name = "git"></a>](#git-)
 - [Microsoft Team <a name ="microsoftteam"></a>](#microsoft-team-)
@@ -18,40 +19,25 @@
 
 # Customer <a name = "customers"></a>
 
-## DIS <a name ="dis"></a>
+
+## Boxxe
+
+### **setPrefercustomscript_kw_setpreferredbinue**
+Type | name | Id | script 
+--- | --- | --- | ---
+User Event | `setPreferredBinUE` | customscript_kw_setpreferredbinue |   setPreferredBinUE.js
+
+[find it from our private repo](https://github.com/HighlanderComputingSolution/monthlyBilling/blob/master/docs/setPreferredBinUE.md)
 
 ## Highlander <a name = "highlander"></a>
 
 
-### **setPreferredBinUE**
+### **customscript_kw_autosalesprices**
 Type | name | Id | script 
 --- | --- | --- | ---
-User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
+User Event | `Highlander AutoSalesPrices` | customscript_kw_autosalesprices | UserEventScript_Highlander_autoSalesPrice.js
 
-```mermaid
-graph TD;
-    A[AfterRecord Submit] -->B
-    B{Bin number & Location }-->| Bin number & Location == empty| C[Add a New Line with set prefered bin];
-    B-->| Bin number & Location not empty| D[ nothing to do]
-```
-
-### **UserEventScript_Highlander_autoSalesPrice**
-Type | name | Id | script 
---- | --- | --- | ---
-User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
-
-```mermaid
-graph TD;
-    A[beforeRecord Submit] -->B
-    B{Item Class}-->| item class == Hardware & Software| C{Special Offer} --> |Yes| D["(rate -specialPrice) *quantity"] -->E[salesPrice];
-    C-->|No| F{return authorization}-->|Yes|G["(rate-costHidden)*quantity"] -->E;
-    F-->|No|I{cspsale or subscription bill is true} -->|Yes|J["(rate - porate) * quantity"] -->E;
-    I-->|No|H["(rate -vendor pice) * quantity"]-->E;
-    B-->|item class == Professional Services| K[rate*quantity*0.5]-->E;
-    B-->|item class == Contract Sales| L{"Use Old Commission Method	"} -->|Yes|M[rate*quantity*0.8]-->E;
-    L-->|No|N[0] -->E
-```
-
+[find it from our private repo](https://github.com/HighlanderComputingSolution/monthlyBilling/blob/master/docs/UserEventScript_Highlander_autoSalesPrice.md)
 
 ### **customscript_kw_delivery_charge_ue**
 Type | name | Id | script 
@@ -92,6 +78,7 @@ Client | `Novuna Finance Client` | customscript_kw_formulas_1 |  Client_kw_novun
 3. fill in formulas such as: custrecord_hl_hitfin_subsidyamount  = custrecord_hl_subsidy * custrecord_hl_nf_amount
 
 
+## DIS <a name ="dis"></a>
 
 
 # Deployment <a name="deployment"></a>
