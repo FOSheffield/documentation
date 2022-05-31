@@ -1,33 +1,29 @@
-# :smile: Welcome  
 
 
-# Documentation Map
+
+**Documentation Map**
+- [Customer <a name = "customers"></a>](#customer-)
+  - [DIS <a name ="dis"></a>](#dis-)
+  - [Highlander <a name = "highlander"></a>](#highlander-)
+    - [**setPreferredBinUE**](#setpreferredbinue)
+    - [**UserEventScript_Highlander_autoSalesPrice**](#usereventscript_highlander_autosalesprice)
+    - [**customscript_kw_delivery_charge_ue**](#customscript_kw_delivery_charge_ue)
+    - [**customscript_kw_hide_button_client**](#customscript_kw_hide_button_client)
+  - [Artesian Spas <a name="artesianspa"></a>](#artesian-spas-)
+    - [**customscript_kw_formulas_1**](#customscript_kw_formulas_1)
+- [Deployment <a name="deployment"></a>](#deployment-)
+- [Git <a name = "git"></a>](#git-)
+- [Microsoft Team <a name ="microsoftteam"></a>](#microsoft-team-)
+- [:star: Support or Contact](#star-support-or-contact)
+
+# Customer <a name = "customers"></a>
+
+## DIS <a name ="dis"></a>
+
+## Highlander <a name = "highlander"></a>
 
 
-- [:smile: Welcome](#smile-welcome)
-- [Documentation Map](#documentation-map)
-  - [Customer <a name = "customers"></a>](#customer-)
-    - [DIS <a name ="dis"></a>](#dis-)
-    - [Highlander <a name = "highlander"></a>](#highlander-)
-      - [**setPreferredBinUE**](#setpreferredbinue)
-      - [**UserEventScript_Highlander_autoSalesPrice**](#usereventscript_highlander_autosalesprice)
-      - [**customscript_kw_delivery_charge_ue**](#customscript_kw_delivery_charge_ue)
-      - [**customscript_kw_hide_button_client**](#customscript_kw_hide_button_client)
-    - [Artesian Spas <a name="artesianspa"></a>](#artesian-spas-)
-      - [**customscript_kw_formulas_1**](#customscript_kw_formulas_1)
-  - [Deployment <a name="deployment"></a>](#deployment-)
-  - [Git <a name = "git"></a>](#git-)
-  - [Microsoft Team <a name ="microsoftteam"></a>](#microsoft-team-)
-  - [:star: Support or Contact](#star-support-or-contact)
-
-## Customer <a name = "customers"></a>
-
-### DIS <a name ="dis"></a>
-
-### Highlander <a name = "highlander"></a>
-
-
-#### **setPreferredBinUE**
+### **setPreferredBinUE**
 Type | name | Id | script 
 --- | --- | --- | ---
 User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
@@ -39,7 +35,7 @@ graph TD;
     B-->| Bin number & Location not empty| D[ nothing to do]
 ```
 
-#### **UserEventScript_Highlander_autoSalesPrice**
+### **UserEventScript_Highlander_autoSalesPrice**
 Type | name | Id | script 
 --- | --- | --- | ---
 User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
@@ -57,7 +53,7 @@ graph TD;
 ```
 
 
-#### **customscript_kw_delivery_charge_ue**
+### **customscript_kw_delivery_charge_ue**
 Type | name | Id | script 
 --- | --- | --- | ---
 User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
@@ -68,7 +64,7 @@ User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   delivery
 3. choose the delivery item you wanna add into the record based on form id and customer id. please seperate the id by **space**
 
 
-#### **customscript_kw_hide_button_client** 
+### **customscript_kw_hide_button_client** 
 
 Type | name | Id | script 
 --- | --- | --- | ---
@@ -81,9 +77,9 @@ Workflow Action | hide Button Sublist | customscript_kw_hide_button |   hideButt
 
 
 
-### Artesian Spas <a name="artesianspa"></a>
+## Artesian Spas <a name="artesianspa"></a>
 
-#### **customscript_kw_formulas_1**
+### **customscript_kw_formulas_1**
 
 Type | name | Id | script 
 --- | --- | --- | ---
@@ -98,7 +94,7 @@ Client | `Novuna Finance Client` | customscript_kw_formulas_1 |  Client_kw_novun
 
 
 
-## Deployment <a name="deployment"></a>
+# Deployment <a name="deployment"></a>
 
 there are seperated document for deployment on Microsoft
 1. [Email Capture](https://highlander.sharepoint.com/:w:/s/SystemsDevelopment/EbytszPke65Do6XMEPThXzABRtooxNNvVVkhhixQCO4QJA?e=uuWys4): capture email to create record 
@@ -107,18 +103,18 @@ there are seperated document for deployment on Microsoft
 
 2. [IQBlade API](https://highlander.sharepoint.com/:w:/s/SystemsDevelopment/EbytszPke65Do6XMEPThXzABRtooxNNvVVkhhixQCO4QJA?e=uuWys4) : automatically generating customer Record Based on Company House Number
 
-## Git <a name = "git"></a>
+# Git <a name = "git"></a>
 
 this is a [seperated document link](git/git.md) for Git on Github
 
-## Microsoft Team <a name ="microsoftteam"></a>
+# Microsoft Team <a name ="microsoftteam"></a>
 
 
 
 
 
 
-## :star: Support or Contact  
+# :star: Support or Contact  
 
 Having troble with Pages? Check out our [Q&A](q&a/index.md) or [contact support](https://highlanderuk.com/contact/) and we'll help you sort it out.
 
