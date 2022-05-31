@@ -4,13 +4,17 @@
 # Documentation Map
 
 
-1. [Customer](#customers)
-   1. [DIS](#dis)
-   2. [Highlander](#highlander)
-   3. [Artesian Spas](#artesianspa)
-2. [ Git ](#git)
-3. [Microsoft Team](microsoftTeam/microsftTeams.md)
-4. [Deployment](#deployment)
+- [:smile: Welcome](#smile-welcome)
+- [Documentation Map](#documentation-map)
+  - [Customer <a name = "customers"></a>](#customer-)
+    - [DIS <a name ="dis"></a>](#dis-)
+    - [Highlander <a name = "highlander"></a>](#highlander-)
+    - [Artesian Spas <a name="artesianspa"></a>](#artesian-spas-)
+      - [**customscript_kw_formulas_1**](#customscript_kw_formulas_1)
+  - [Deployment <a name="deployment"></a>](#deployment-)
+  - [Git <a name = "git"></a>](#git-)
+  - [Microsoft Team <a name ="microsoftteam"></a>](#microsoft-team-)
+  - [:star: Support or Contact](#star-support-or-contact)
 
 ## Customer <a name = "customers"></a>
 
