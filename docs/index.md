@@ -1,63 +1,45 @@
-# :smile: Welcome  
 
 
-# Documentation Map
+
+**Documentation Map**
+- [Customer <a name = "customers"></a>](#customer-)
+  - [Boxxe](#boxxe)
+    - [**setPrefercustomscript_kw_setpreferredbinue**](#setprefercustomscript_kw_setpreferredbinue)
+  - [Highlander <a name = "highlander"></a>](#highlander-)
+    - [**customscript_kw_autosalesprices**](#customscript_kw_autosalesprices)
+    - [**customscript_kw_delivery_charge_ue**](#customscript_kw_delivery_charge_ue)
+    - [**customscript_kw_hide_button_client**](#customscript_kw_hide_button_client)
+  - [Artesian Spas <a name="artesianspa"></a>](#artesian-spas-)
+    - [**customscript_kw_formulas_1**](#customscript_kw_formulas_1)
+  - [DIS <a name ="dis"></a>](#dis-)
+- [Deployment <a name="deployment"></a>](#deployment-)
+- [Git <a name = "git"></a>](#git-)
+- [Microsoft Team <a name ="microsoftteam"></a>](#microsoft-team-)
+- [:star: Support or Contact](#star-support-or-contact)
+
+# Customer <a name = "customers"></a>
 
 
-- [:smile: Welcome](#smile-welcome)
-- [Documentation Map](#documentation-map)
-  - [Customer <a name = "customers"></a>](#customer-)
-    - [DIS <a name ="dis"></a>](#dis-)
-    - [Highlander <a name = "highlander"></a>](#highlander-)
-      - [**setPreferredBinUE**](#setpreferredbinue)
-      - [**UserEventScript_Highlander_autoSalesPrice**](#usereventscript_highlander_autosalesprice)
-      - [**customscript_kw_delivery_charge_ue**](#customscript_kw_delivery_charge_ue)
-      - [**customscript_kw_hide_button_client**](#customscript_kw_hide_button_client)
-    - [Artesian Spas <a name="artesianspa"></a>](#artesian-spas-)
-      - [**customscript_kw_formulas_1**](#customscript_kw_formulas_1)
-  - [Deployment <a name="deployment"></a>](#deployment-)
-  - [Git <a name = "git"></a>](#git-)
-  - [Microsoft Team <a name ="microsoftteam"></a>](#microsoft-team-)
-  - [:star: Support or Contact](#star-support-or-contact)
+## Boxxe
 
-## Customer <a name = "customers"></a>
-
-### DIS <a name ="dis"></a>
-
-### Highlander <a name = "highlander"></a>
-
-
-#### **setPreferredBinUE**
+### **setPrefercustomscript_kw_setpreferredbinue**
 Type | name | Id | script 
 --- | --- | --- | ---
-User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
+User Event | `setPreferredBinUE` | customscript_kw_setpreferredbinue |   setPreferredBinUE.js
 
-```mermaid
-graph TD;
-    A[AfterRecord Submit] -->B
-    B{Bin number & Location }-->| Bin number & Location == empty| C[Add a New Line with set prefered bin];
-    B-->| Bin number & Location not empty| D[ nothing to do]
-```
+[find it from our private repo](https://github.com/HighlanderComputingSolution/monthlyBilling/blob/master/docs/setPreferredBinUE.md)
 
-#### **UserEventScript_Highlander_autoSalesPrice**
+## Highlander <a name = "highlander"></a>
+
+
+### **customscript_kw_autosalesprices**
 Type | name | Id | script 
 --- | --- | --- | ---
-User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
+User Event | `Highlander AutoSalesPrices` | customscript_kw_autosalesprices | UserEventScript_Highlander_autoSalesPrice.js
 
-```mermaid
-graph TD;
-    A[beforeRecord Submit] -->B
-    B{Item Class}-->| item class == Hardware & Software| C{Special Offer} --> |Yes| D["(rate -specialPrice) *quantity"] -->E[salesPrice];
-    C-->|No| F{return authorization}-->|Yes|G["(rate-costHidden)*quantity"] -->E;
-    F-->|No|I{cspsale or subscription bill is true} -->|Yes|J["(rate - porate) * quantity"] -->E;
-    I-->|No|H["(rate -vendor pice) * quantity"]-->E;
-    B-->|item class == Professional Services| K[rate*quantity*0.5]-->E;
-    B-->|item class == Contract Sales| L{"Use Old Commission Method	"} -->|Yes|M[rate*quantity*0.8]-->E;
-    L-->|No|N[0] -->E
-```
+[find it from our private repo](https://github.com/HighlanderComputingSolution/monthlyBilling/blob/master/docs/UserEventScript_Highlander_autoSalesPrice.md)
 
-
-#### **customscript_kw_delivery_charge_ue**
+### **customscript_kw_delivery_charge_ue**
 Type | name | Id | script 
 --- | --- | --- | ---
 User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   deliveryCharge.js
@@ -68,7 +50,7 @@ User Event | `Delivery Charge` | customscript_kw_delivery_charge_ue |   delivery
 3. choose the delivery item you wanna add into the record based on form id and customer id. please seperate the id by **space**
 
 
-#### **customscript_kw_hide_button_client** 
+### **customscript_kw_hide_button_client** 
 
 Type | name | Id | script 
 --- | --- | --- | ---
@@ -81,9 +63,9 @@ Workflow Action | hide Button Sublist | customscript_kw_hide_button |   hideButt
 
 
 
-### Artesian Spas <a name="artesianspa"></a>
+## Artesian Spas <a name="artesianspa"></a>
 
-#### **customscript_kw_formulas_1**
+### **customscript_kw_formulas_1**
 
 Type | name | Id | script 
 --- | --- | --- | ---
@@ -96,9 +78,10 @@ Client | `Novuna Finance Client` | customscript_kw_formulas_1 |  Client_kw_novun
 3. fill in formulas such as: custrecord_hl_hitfin_subsidyamount  = custrecord_hl_subsidy * custrecord_hl_nf_amount
 
 
+## DIS <a name ="dis"></a>
 
 
-## Deployment <a name="deployment"></a>
+# Deployment <a name="deployment"></a>
 
 there are seperated document for deployment on Microsoft
 1. [Email Capture](https://highlander.sharepoint.com/:w:/s/SystemsDevelopment/EbytszPke65Do6XMEPThXzABRtooxNNvVVkhhixQCO4QJA?e=uuWys4): capture email to create record 
@@ -107,18 +90,18 @@ there are seperated document for deployment on Microsoft
 
 2. [IQBlade API](https://highlander.sharepoint.com/:w:/s/SystemsDevelopment/EbytszPke65Do6XMEPThXzABRtooxNNvVVkhhixQCO4QJA?e=uuWys4) : automatically generating customer Record Based on Company House Number
 
-## Git <a name = "git"></a>
+# Git <a name = "git"></a>
 
 this is a [seperated document link](git/git.md) for Git on Github
 
-## Microsoft Team <a name ="microsoftteam"></a>
+# Microsoft Team <a name ="microsoftteam"></a>
 
 
 
 
 
 
-## :star: Support or Contact  
+# :star: Support or Contact  
 
 Having troble with Pages? Check out our [Q&A](q&a/index.md) or [contact support](https://highlanderuk.com/contact/) and we'll help you sort it out.
 
