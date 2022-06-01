@@ -12,6 +12,12 @@
   - [Artesian Spas <a name="artesianspa"></a>](#artesian-spas-)
     - [**customscript_kw_formulas_1**](#customscript_kw_formulas_1)
   - [DIS <a name ="dis"></a>](#dis-)
+  - [Artesian Spas](#artesian-spas)
+    - [**customscript_kw_create_so_from_po**](#customscript_kw_create_so_from_po)
+    - [**customscript_kw_salesordersummary_ue**](#customscript_kw_salesordersummary_ue)
+    - [**customscript_client_kw_warranty_reg**](#customscript_client_kw_warranty_reg)
+    - [**customscript_client_kw_warranty_reg**](#customscript_client_kw_warranty_reg-1)
+    - [**customscript_client_so_colourrestriction**](#customscript_client_so_colourrestriction)
 - [Deployment <a name="deployment"></a>](#deployment-)
 - [Git <a name = "git"></a>](#git-)
 - [Microsoft Team <a name ="microsoftteam"></a>](#microsoft-team-)
@@ -82,6 +88,41 @@ Client | `Novuna Finance Client` | customscript_kw_formulas_1 |  Client_kw_novun
 
 
 ## DIS <a name ="dis"></a>
+
+## Artesian Spas
+
+### **customscript_kw_create_so_from_po**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+Workflow Action | `Workflow Create SO From PO` | customscript_kw_create_so_from_po |  Workflow_kw_Create_SO_FromPO.js
+
+
+### **customscript_kw_salesordersummary_ue**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+User Event | `Sales Order Summary User Event` | customscript_kw_salesordersummary_ue |  UserEvent_kw_SalesOrderSummary.js
+
+### **customscript_client_kw_warranty_reg**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+Client | `Client Warranty Registration` | customscript_client_kw_warranty_reg |  Client_kw_warrantyRegistration.js
+
+
+### **customscript_client_kw_warranty_reg**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+Client | `Client Warranty Registration` | customscript_client_kw_warranty_reg |  Client_kw_warrantyRegistration.js
+
+### **customscript_client_so_colourrestriction**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+Client | `HCS colourRestriction` | customscript_client_so_colourrestriction |  Client_SalesOrder_popup_colourRestrictions.js 
+
 
 
 # Deployment <a name="deployment"></a>
