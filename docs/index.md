@@ -6,6 +6,8 @@
   - [Boxxe](#boxxe)
     - [**setPrefercustomscript_kw_setpreferredbinue**](#setprefercustomscript_kw_setpreferredbinue)
   - [Highlander <a name = "highlander"></a>](#highlander-)
+    - [**customscript_kw_autocontactsearechupdate**](#customscript_kw_autocontactsearechupdate)
+    - [**customscript_auto_hcs_projecttaskcreate**](#customscript_auto_hcs_projecttaskcreate)
     - [**customscript_kw_autosalesprices**](#customscript_kw_autosalesprices)
     - [**customscript_kw_delivery_charge_ue**](#customscript_kw_delivery_charge_ue)
     - [**customscript_kw_hide_button_client**](#customscript_kw_hide_button_client)
@@ -16,8 +18,12 @@
     - [**customscript_kw_create_so_from_po**](#customscript_kw_create_so_from_po)
     - [**customscript_kw_salesordersummary_ue**](#customscript_kw_salesordersummary_ue)
     - [**customscript_client_kw_warranty_reg**](#customscript_client_kw_warranty_reg)
-    - [**customscript_client_kw_warranty_reg**](#customscript_client_kw_warranty_reg-1)
+    - [**customscript_client_kw_warrantyclaim**](#customscript_client_kw_warrantyclaim)
     - [**customscript_client_so_colourrestriction**](#customscript_client_so_colourrestriction)
+    - [**customscript_kw_invoice_calculator**](#customscript_kw_invoice_calculator)
+    - [**customscript_kw_po_sapshellcol**](#customscript_kw_po_sapshellcol)
+    - [**customscript_ue_kw_autowarrantycreation**](#customscript_ue_kw_autowarrantycreation)
+    - [**customscript_us_kw_invoice_calculator**](#customscript_us_kw_invoice_calculator)
 - [Deployment <a name="deployment"></a>](#deployment-)
 - [Git <a name = "git"></a>](#git-)
 - [Microsoft Team <a name ="microsoftteam"></a>](#microsoft-team-)
@@ -36,7 +42,25 @@ User Event | `setPreferredBinUE` | customscript_kw_setpreferredbinue |   setPref
 
 [find it from our private repo](https://github.com/HighlanderComputingSolution/monthlyBilling/blob/master/docs/setPreferredBinUE.md)
 
+
+
+
 ## Highlander <a name = "highlander"></a>
+
+### **customscript_kw_autocontactsearechupdate**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+Scheduled | `Auto Contract Search Update` | customscript_kw_autocontactsearechupdate |  Schedule_highlander_autoContactSearchUpdate.js
+
+
+### **customscript_auto_hcs_projecttaskcreate**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+Scheduled | `Auto Project Task Create` | customscript_auto_hcs_projecttaskcreate |  Schedule_hcs_autoProjectTaskCreate.js
+
+
 
 
 ### **customscript_kw_autosalesprices**
@@ -111,17 +135,50 @@ Type | name | Id | script
 Client | `Client Warranty Registration` | customscript_client_kw_warranty_reg |  Client_kw_warrantyRegistration.js
 
 
-### **customscript_client_kw_warranty_reg**
+### **customscript_client_kw_warrantyclaim**
 
 Type | name | Id | script 
 --- | --- | --- | ---
-Client | `Client Warranty Registration` | customscript_client_kw_warranty_reg |  Client_kw_warrantyRegistration.js
+Client | `Invoice Calculator` | customscript_kw_invoice_calculator |  Client_kw_invoiceCalculate.js
+
+
+
 
 ### **customscript_client_so_colourrestriction**
 
 Type | name | Id | script 
 --- | --- | --- | ---
 Client | `HCS colourRestriction` | customscript_client_so_colourrestriction |  Client_SalesOrder_popup_colourRestrictions.js 
+
+
+### **customscript_kw_invoice_calculator**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+Client | `HCS colourRestriction` | customscript_client_so_colourrestriction |  Client_SalesOrder_popup_colourRestrictions.js 
+
+
+### **customscript_kw_po_sapshellcol**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+User Event | `Pucharse Order Sap Shell Col` | customscript_kw_po_sapshellcol |  UserEvent_kw_POSapShellCol.js 
+
+### **customscript_ue_kw_autowarrantycreation**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+User Event | `auto Warranty Creation` | customscript_ue_kw_autowarrantycreation |  UserEvent_kw_autoWarrantyCreation.js
+
+
+### **customscript_us_kw_invoice_calculator**
+
+Type | name | Id | script 
+--- | --- | --- | ---
+User Event | `Invoice Calculator` | customscript_us_kw_invoice_calculator |  UserEvent_kw_invoiceCalculate.js
+
+
+
 
 
 
